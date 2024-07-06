@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Metric/Imperial Unit Conversion</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form id="input-form">
+        <h1 id="title">Metric/Imperial Unit Conversion</h1>
+        <input id="input-box" type="text" autofocus aria-label="amount" placeholder="0" autocomplete="off" value="">
+        <h4 id="error-msg" class="error">Please enter a valid number</h4>
+        <button id="convert-btn" type="submit">Convert</button>
+        </form>
+        <section class="conversion-section">
+          <div class="conversion-containers">
+            <h3>Length (Meter/Feet)</h3>
+            <p id="length-element">0 meters = 0 feet | 0 feet = 0 meters</p>
+          </div>  
+          <div class="conversion-containers">
+            <h3>Volume(Liters/Gallons)</h3>
+            <p id="volume-element">0 litres = 0 gallons | 0 gallons = 0 liters</p>
+        </div> 
+        <div class="conversion-containers">
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p id="mass-element">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
+        </div> 
+        </section>
+        <script type="module" src="/index.js"></script>
+    </body>
+</html>
